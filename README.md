@@ -33,12 +33,12 @@ height="100" alt="Linux:  ">
 <img src="https://www.roulette.ag/wp-content/uploads/2015/01/windows.jpg"
     height="120" alt="Windows:  ">
 
-1. Place the ".vimrc" file in the C:\Users\Your-Name> directory, where "Your-Name" should be replaced with your actual name.  
-2. Run the following to install [**Vim Plug**](https://github.com/junegunn/vim-plug):  
+1. Run the following to install [**Vim Plug**](https://github.com/junegunn/vim-plug):  
    ```cmd
-   mkdir %USERPROFILE%\vimfiles\autoload\ && curl -LJO https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim && move plug.vim %USERPROFILE%\vimfiles\autoload\
+    mv _vimrc "C:\Users\Your-Username"
+    mkdir %USERPROFILE%\vimfiles\autoload\ && curl -LJO https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim && move plug.vim %USERPROFILE%\vimfiles\autoload\
    ```  
-3. Open the _vimrc file from vim and run :PlugInstall then restart Vim.  
+2. Open the _vimrc file from vim and run :PlugInstall then restart Vim.  
 
 ---
   
