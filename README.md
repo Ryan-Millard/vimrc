@@ -8,7 +8,7 @@ height="100" alt="Linux:  ">
     | ----- | ------------------------------------------------ |
       ```bash
     mv _vimrc ~/.vimrc
-    sudo yum update -y && sudo yum install curl vim -y
+    sudo apt update -y && sudo apt install curl vim -y
     curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     vim ~/.vimrc +PlugInstall +qall
    ```
@@ -29,8 +29,6 @@ height="100" alt="Linux:  ">
     vim ~/.vimrc +PlugInstall +qall
    ```
 3. Open the .vimrc file from vim and run :PlugInstall then restart Vim.
-
-***
    
 <img src="https://www.roulette.ag/wp-content/uploads/2015/01/windows.jpg"
     height="120" alt="Windows:  ">
@@ -41,6 +39,8 @@ height="100" alt="Linux:  ">
    mkdir %USERPROFILE%\vimfiles\autoload\ && curl -LJO https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim && move plug.vim %USERPROFILE%\vimfiles\autoload\
    ```  
 3. Open the _vimrc file from vim and run :PlugInstall then restart Vim.  
+
+---
   
 # PLUGINS:  
 You can find the GitHub repository for each plugin used in this vimrc file as well as follow the links below to find out more about each.  
