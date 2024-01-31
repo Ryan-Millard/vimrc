@@ -1,24 +1,6 @@
 # INITIAL SETUP:
-<p align="center">
-    <img src="https://i.extremetech.com/imagery/content-types/00ZTdioKuRFKHIEMNw8NtDb/hero-image.jpg"
-    height="100" alt="Linux:  ">
-</p>
-
-
-<table>
-<tr>
-<td>
-```bash
-mv _vimrc ~/.vimrc
-sudo yum update -y && sudo yum install curl vim -y
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim ~/.vimrc +PlugInstall +qall
-```
-</td>
-</tr>
-</table>fds
-
-
+<img src="https://i.extremetech.com/imagery/content-types/00ZTdioKuRFKHIEMNw8NtDb/hero-image.jpg"
+height="100" alt="Linux:  ">
 
 1. Run the following in your terminal to install [**Vim Plug**](https://github.com/junegunn/vim-plug):
 
@@ -50,10 +32,8 @@ vim ~/.vimrc +PlugInstall +qall
 
 ***
    
-<p align="center">
-    <img src="https://www.roulette.ag/wp-content/uploads/2015/01/windows.jpg"
-        height="120" alt="Windows:  ">
-</p>
+<img src="https://www.roulette.ag/wp-content/uploads/2015/01/windows.jpg"
+    height="120" alt="Windows:  ">
 
 1. Place the ".vimrc" file in the C:\Users\Your-Name> directory, where "Your-Name" should be replaced with your actual name.  
 2. Run the following to install [**Vim Plug**](https://github.com/junegunn/vim-plug):  
