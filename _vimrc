@@ -1,6 +1,10 @@
 " Set the leader character (See <Leader> uses below)
 let mapleader = "\\"
 
+set backspace=indent,eol,start	" Fix backspace issue on certain Windows systems
+								" Should not affect Linux as this is how the
+								" btn should function
+
 set number	" Add line numbers
 set relativenumber	" Line Numbers relative to cursor
 			" Aids with navigation
