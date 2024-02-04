@@ -9,7 +9,7 @@ Run the following in your terminal to install [**Vim Plug**](https://github.com/
 mv _vimrc ~/.vimrc
 sudo apt update -y && sudo apt install curl vim -y
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim +PlugInstall +qall
+vim +PlugInstall +q2
 ```
 <br>
 
@@ -19,7 +19,7 @@ vim +PlugInstall +qall
 mv _vimrc ~/.vimrc
 sudo yum update -y && sudo yum install curl vim -y
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim +PlugInstall +qall
+vim +PlugInstall +q2
 ```
 <br>
 
@@ -29,7 +29,7 @@ vim +PlugInstall +qall
 mv _vimrc ~/.vimrc
 sudo pacman -Syu curl vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim +PlugInstall +qall
+vim +PlugInstall +q2
 ```
 
 ---
@@ -41,27 +41,9 @@ Run the following to install [**Vim Plug**](https://github.com/junegunn/vim-plug
 ```cmd
 mv _vimrc "%USERPROFILE%"
 mkdir %USERPROFILE%\vimfiles\autoload\ && curl -LJO https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim && move plug.vim %USERPROFILE%\vimfiles\autoload\
-vim +PlugInstall +qall
+vim +PlugInstall +q2
 ```  
-
-<img src="https://thesecmaster.com/wp-content/uploads/2022/08/Step-by-Step-Procedure-to-Install-WSL2-on-Windows-And-Run-Ubuntu-on-Windows-Using-WSL2.jpg" height="100" alt="Linux:  ">
-
-Run the following from a windows terminal to install [**Vim Plug**](https://github.com/junegunn/vim-plug):  
-```cmd
-mv _vimrc "%USERPROFILE%"
-mkdir %USERPROFILE%\vimfiles\autoload\ && curl -LJO https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim && move plug.vim %USERPROFILE%\vimfiles\autoload\
-vim +PlugInstall +qall
-```
-Next, run the following in each of your WSL Terminals to
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-allow them acces to your main vimrc file:
-```bash
-echo "source /mnt/c/Users/$(cmd.exe /C 'echo %USERNAME%' | tr -d '\r')" >>  ~/.vimrc && vim +PluginInstall +qall
-```
-The above allows you to have one vimrc file that geet used by all subsystems and your main OS.
-
+  
 # PLUGINS:  
 You can find the GitHub repository for each plugin used in this vimrc file as well as follow the links below to find out more about each.  
 1. [NERDTree](https://github.com/preservim/nerdtree)  
