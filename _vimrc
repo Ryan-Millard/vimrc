@@ -13,8 +13,7 @@ set shiftwidth=4
 set autoindent	" Automatically indent on "="
 set smartindent	" Indents based on context
 syntax enable	" Enables syntax highlighting using file extension
-set list listchars=tab:▸\ ,trail:·	" Tabs show as "▸"
-					" Spaces at EOL show up as "·"
+set list listchars=tab:▸\ ,trail:·	" Tabs show as "▸",	spaces at EOL show up as "·" 
 set cursorline	" Highlight the line where the cursor is
 set incsearch	" Use incremental searching for characters ("/" in normal mode)
 set showmatch	" Show matches based on searches
@@ -31,6 +30,18 @@ filetype plugin on
 " Copy entire line
 	vnoremap <Leader>yl :<C-u>silent! '<,'>w !clip.exe<CR>:redraw!<CR>
 
+" Silent Vim (disable Vim's error bell)
+	set noerrorbells
+	set vb
+	set t_vb=
+	set belloff=all
+
+
+
+
+" --------------------------------------------------------------------------------------------------------------------
+" 				PLUGINS (usinng VimPlug)
+" --------------------------------------------------------------------------------------------------------------------
 " All Lazy Loads improve performance as Vim is single-threaded
 call plug#begin('~/.vim/plugged')
 
