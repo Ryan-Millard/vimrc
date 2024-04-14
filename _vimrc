@@ -27,8 +27,6 @@ filetype plugin on
 " Enable system clipboard for copy and paste (WSL 2)
 " Copy entire file
 	nnoremap <Leader>ya :<C-u>silent! w !clip.exe<CR>:redraw!<CR>	
-" Copy entire line
-	vnoremap <Leader>yl :<C-u>silent! '<,'>w !clip.exe<CR>:redraw!<CR>
 
 " Silent Vim (disable Vim's error bell)
 	set noerrorbells
