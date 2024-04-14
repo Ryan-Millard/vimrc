@@ -25,16 +25,11 @@ set nowrap	" Prevent lines from wrapping when text exceeds the screen limit
 			" Instead, it overflows to a non-visible area
 filetype plugin on
 
-" Enable system clipboard for copy and paste
-if has('clipboard')
-	if has('win32') || has('win64')
-		set clipboard=unnamed
-	elseif system('uname -r') =~ 'microsoft'
-		set clipboard=unnamedplus
-	else
-		set clipboard=unnamedplus
-	endif
-endif
+" Enable system clipboard for copy and paste (WSL 2)
+" Copy entire file
+	nnoremap <Leader>ya :<C-u>silent! w !clip.exe<CR>:redraw!<CR>	
+" Copy entire line
+	vnoremap <Leader>yl :<C-u>silent! '<,'>w !clip.exe<CR>:redraw!<CR>
 
 " All Lazy Loads improve performance as Vim is single-threaded
 call plug#begin('~/.vim/plugged')
